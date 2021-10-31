@@ -1,0 +1,242 @@
+@media (max-width: 768px){
+    .container{
+        max-width: 100%;
+    }
+    /* header */
+    .header{
+        height: 670px;
+    }
+    .logo_link{
+        position: absolute;
+        top: 3px;
+        left: 3px;
+    }
+    /* menu burger */
+    .menu_burger{
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #cccccc;
+        border-radius: 50%;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+    }
+    .menu_burger:active{
+        background-color: #ffffff;
+    }
+    .menu_burger span{
+        width: 60%;
+        height: 2px;
+        background-color: #000000;
+        position: absolute;
+        top: 17px;
+        left: 7px;
+    }
+
+    .menu_burger::before,
+    .menu_burger::after{
+        content: "";
+        width: 60%;
+        height: 2px;
+        background-color: #000000;
+        position: absolute;
+        left: 7px;
+    }
+    .menu_burger::before{
+        top: 8px;
+    }
+    .menu_burger::after{
+        bottom: 8px;
+    }
+    .menu{
+        background-color: #ffffff;
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: -225px;
+        right: 3px;
+        transition: ease 1s;
+    }
+    .menu_active{
+        top: 45px;
+        transition: ease 1s;
+    }
+    .menu li{
+        display: block;
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    .basket{
+        display: none;
+    }
+    .basket_icon{
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: url(../icons/icon-basket-def.png) no-repeat;
+        position: absolute;
+        top: 4px;
+        right: 50px;
+    }
+    .basket_icon:hover{
+        background: url(../icons/icon-basket-hover.png) no-repeat;
+    }
+    .basket_icon:active{
+        background: url(../icons/icon-basket-active.png) no-repeat;
+    }
+    /* slider */
+    .slider{
+        display: block;
+        text-align: center;
+        margin-top: 0;
+        margin-top: 150px;
+    }
+   .slider_title{
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 0;
+        margin-bottom: 20px;
+   }
+   .slider_description{
+       margin-bottom: 0;
+       margin-bottom: 20px;
+   }
+   .img_slider{
+    position: static;
+    display: inline-block;
+    margin-top: 40px;
+}
+.slider_dots{
+    margin-top: 20px;
+}
+/* section services */
+.service:last-child{
+    margin-top: 30px;
+}
+/* description_studio */
+.description_studio_content{
+    display: block;
+    text-align: center;
+}
+.column_left{
+    max-width: 100%;
+}
+.column_left h2{
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+.column_left h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.column_left li{
+    padding-bottom: 15px;
+}
+.column_right img{
+    padding-top: 20px;
+}
+.column_right p{
+    padding-top: 20px;
+}
+.column_right h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.column_right li{
+    padding-bottom: 15px;
+}
+/* footer */
+.footer_content{
+    height: 226px;
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+}
+.tagline{
+    margin-top: 20px;
+}
+.tagline_title{
+    font-size: 26px;
+    line-height: 26px;
+}
+.icons_social{
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media (max-width: 550px){
+    /* section services */
+    .services_content{
+        padding-top: 0;
+        padding-top: 40px;
+        display: block;
+        text-align: center;
+    }
+    .service{
+        margin-bottom: 40px;
+    }
+    .service:last-child{
+        margin-bottom: 0;
+    }
+    .service p{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    /* partners */
+    .partners_container{
+        display: block;
+        text-align: center;
+    }
+    .glukhanko{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .html_academe{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+    .barbershop{
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
+      margin: 0 auto;
+    }
+    /* location_studio */
+    .location_studio_content{
+        display: flex;
+        flex-direction: column;
+      }
+    .location_info{
+        height: 210px;
+        margin-top: 0;
+        margin-top: 10px;
+    }
+    .location_title{
+        margin-left: 10px;
+        padding-top: 13px;
+    }
+    .location_description{
+        margin-left: 10px;
+        padding-top: 13px;
+    }
+    .location_link{
+        width: 120px;
+        margin-left: 10px;
+    }
+    .location_studio_img{
+        margin-top: 0;
+    }
+}

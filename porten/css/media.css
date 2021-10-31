@@ -1,0 +1,284 @@
+@media (max-width: 1030px){
+    /* ...footer....................................... */
+    .footer_bg{
+        width: 100%;
+        height: 700px;
+        background: url(../images/bg_footer.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .footer_title{
+        padding-top: 0;
+        padding-top: 20px;
+    }
+    .footer_content{
+        width: 350px;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    .about_shop,.categories,.mailing{
+        display: block;
+        text-align: center;
+    }
+    .categories{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .list_categories_container{
+        display: block;
+        text-align: center;
+        margin-top: 0;
+        margin-top: 10px;
+    }
+    .mailing{
+        width: 300px;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    .btn_subscribe{
+        margin-top: 10px;
+    }
+}
+@media (max-width: 1165px){
+    .flex_container{
+        flex-direction: column;
+    }
+    /* .....product...................................... */
+    .product{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+   
+    /* ....new collection............................... */
+    .new_collection{
+        max-width: 100%;
+        margin-left: 0px;
+        background-size: cover;
+    }
+    /* ....collection......................................... */
+    .collection_container{
+        flex-direction: column;
+    }
+    .collection_img{
+      background-size: cover;
+      background-position: center;
+    }
+    /* ......new goods.................................. */
+    .new_goods_content{
+        margin-top: 0;
+        margin-top: 40px;
+    }
+    .new_goods_rows_one,.new_goods_rows_two{
+        display: block;
+        text-align: center;
+    }
+    .new_goods_link_card{
+        margin-top: 15px;
+    }
+    .new_goods_link_card:first-child{
+        margin-top: 0;
+    }
+}
+@media (max-width: 768px){
+    .main_title{
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .decoration_element{
+        margin-top: 20px;
+    }
+    /* ..navbar top............................ */
+    .navbar_top{
+        min-height: 64px;
+    }
+    .namber_phone{
+        display: none;
+    }
+    .namber_phone_active{
+        display: block;
+        position: absolute;
+        top: 32px;
+        left: 35px;
+    }
+    /* ...navbar........................... */
+    .navbar{
+        min-height: 100px;
+        position: relative;
+    }
+    .logo_link{
+        position: absolute;
+        top: 15px;
+    }
+    .menu_burger{
+        width: 30px;
+        height: 30px;
+        border: solid 2px #6e6d6d;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        z-index: 33;
+    }
+    .menu_burger::before,
+    .menu_burger::after{
+        content: "";
+        display: inline-block;
+        width: 50%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 7px;
+        transition: ease 1s;
+    }
+    .menu_burger::before{
+        top: 6px;
+    }
+    .menu_burger span{
+        display: block;
+        width: 50%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 12px;
+        left: 7px;
+        transition: ease 1s;
+    }
+    .menu_burger::after{
+       top: 18px;
+    }
+    .menu_burger_active span{
+        background-color: transparent;
+        transition: ease 1s;
+    }
+    .menu_burger_active::before{
+        transform: rotate(50deg);
+        top: 12px;
+        transition: ease 1s;
+    }
+    .menu_burger_active::after{
+        transform: rotate(-50deg);
+        top: 12px;
+        transition: ease 1s;
+    }
+
+    .menu{
+       margin-top: -400px;
+       margin-left: 120px;
+       transition: ease 1s;
+    }
+    .menu ul{
+        display: block;
+    }
+    .menu_mobile{
+        margin-top: 0px;
+        transition: ease 1s;
+    }
+    .link_basket{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+    .icon_search{
+        position: absolute;
+        top: 40px;
+        right: 10px;
+    }
+    .search{
+        position: absolute;
+        top: 60px;
+        right: 0px;
+    }
+    /* ......banner................................ */
+    .description_shop{
+        margin-top: 30px;
+    }
+    /* ........product.............................. */
+    .product{
+        margin-top: 30px;
+    }
+    .product_content{
+        width: 0px;
+        display: block;
+        text-align: center;
+        margin-top: 0;
+        margin-top: 20px;
+    }
+    .product_link_card{
+        margin-top: 10px;
+    }
+    .product_link_card:first-child{
+        margin-top: 0;
+    }
+    /* .....new collection............................................. */
+    .new_collection{
+        margin-top: 30px;
+    }
+    /* .......collection................................................ */
+    /* .collection_img, */
+    .margin_top{
+        margin-top: 30px;
+    }
+    .description_collection{
+        margin-bottom: 0;
+        margin-bottom: 30px;
+    }
+    /* ......new goods............................................ */
+    .new_goods{
+        margin-top: 0;
+        margin-top: 30px;
+    }
+    .new_goods_link_card{
+        margin-top: 0;
+        margin-top: 10px;
+    }
+    .new_goods_link_card:first-child{
+        margin-top: 0;
+    }
+    /* ......brand..................................................... */
+    .brand{
+        margin-top: 0;
+        margin-top: 30px;
+    }
+    /* ..........footer....................................................... */
+    .footer_title{
+        padding-top: 0;
+    }
+    .about_shop,.categories,.mailing{
+        margin-top: 0;
+        padding-top: 30px;
+    }
+}
+@media (max-width: 525px){
+    /* ..navbar top............................ */
+    .namber_phone_active{
+        top: 14px;
+        left: 35px;
+    }
+    .log_in{
+       transform: translate(50px,0px);
+    }
+    .registration{
+        transform: translate(0px,20px);
+    }
+    .schedule{
+      position: absolute;
+      top: 20px;
+    }
+    .working_hours{
+      position: absolute;
+      top: 20px;
+      left: 5px;
+    }
+    /* ...banner................................................ */
+    .frame{
+        width: 220px;
+        height: 220px;
+    }
+    /* .......brand............................................ */
+    .brand_content{
+        display: block;
+        text-align: center;
+    }
+}

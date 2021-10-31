@@ -1,0 +1,319 @@
+@media (max-width: 1251px){
+    /* slider */
+    .slider_img{
+        max-width: 49%;
+        top: 90px;
+    }
+      .special_offers_content{
+        display: flex;
+        flex-direction: column;
+    }
+    .special_offers_card{
+       display: block;
+       margin-left: 0;
+       margin-right: 0;
+       margin: 0 auto;
+       margin-bottom: 30px;
+    }
+    /* services */
+    .services{
+        width: 100%;
+        margin-top: 1330px;
+    }
+    .services_grid_container{
+        width: 800px;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 30px 39px;
+  }
+}
+@media (max-width: 1000px){
+    /* news */
+    .news{
+        margin-top: 0;
+        margin-top: 10px;
+    }
+    .tab_content,.tab_btns_container{
+      width: 100%;
+    }
+    .tab_content,.tab_btns_container{
+        height: 550px;
+    }
+    .tab_title{
+        font-size: 18px;
+        line-height: 120%;
+        padding-top: 25px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+     /* special_offers */
+     .special_offers{
+        margin-top: 0;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 973px){
+    .menu li{
+       margin-right: 20px;
+    }
+}
+@media (max-width: 900px){
+    .container{
+        max-width: 100%;
+    }
+    /* navbar */
+    .phone{
+        margin-left: 35px;
+    }
+    .our_salons_tect{
+        margin-left: 30px;
+    }
+    .icons_social{
+        width: 200px;
+    }
+    .header{
+        height: 1000px;
+        position: relative;
+    }
+    /* menu  burger*/
+    .menu_burger{
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border: 2px solid #00868A;
+        border-radius: 50%;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+    }
+    .menu_burger span{
+        width: 60%;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 17px;
+        left: 7px;
+    }
+
+    .menu_burger::before,
+    .menu_burger::after{
+        content: "";
+        width: 60%;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 7px;
+    }
+    .menu_burger::before{
+        top: 8px;
+    }
+    .menu_burger::after{
+        bottom: 8px;
+    }
+    .menu{
+        width: 300px;
+        height: 140px;
+        background-color: #00868A;
+        position: absolute;
+        top: 50px;
+        right: -300px;
+        transition: ease 1s;
+    }
+    .menu_active{
+      right: 0;
+      transition: ease 1s;
+    }
+    .menu li{
+        display: block;
+    }
+    .menu a{
+        padding-left: 20px;
+    }
+    .btn_appointment{
+        width: 125px;
+	    height: 40px;
+        font-size: 12px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    /* slider */
+    .slider{
+        margin-top: 40px;
+    }
+    .slider_item{
+        text-align: center;
+    }
+    .slider_description{
+        text-align: center;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    .slider_img{
+        position: static;
+        max-width: 70%;
+        max-height: 100%;
+        margin-top: 40px;
+    }
+    .slider_arrows{
+        margin: 0;
+    }
+   .arrow_left{
+       position: absolute;
+       top: 50%;
+       left: 0;
+       z-index: 44;
+   }
+   .arrow_right{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 44;
+    }
+    /* news */
+    .tabs_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .tab_content,.tab_btns_container{
+        max-width: 100%;
+    }
+     /* services */
+     .services{
+        width: 100%;
+    }
+    .services_grid_container{
+        width: 500px;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 30px 39px;
+  }
+}
+@media (max-width: 768px){
+    .header{
+        height: 900px;
+    }
+    /* navbar */
+    .navbar{
+        position: relative;
+    }
+    .navbar_content{
+        display: flex;
+        justify-content: start;
+    }
+    .logo{
+        max-width: 70%;
+        margin: 0;
+    }
+    .logo_link{
+        max-width: 70%;
+        margin: 0;
+    }
+    .our_salons_tect,.phone{
+        display: none;
+    }
+    .phone_active{
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin-left: 0;
+    }
+    .icon_phone{
+        display: block;
+        width: 16px;
+        height: 16px;
+        background: url(../icons/phone_icon.svg) no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 145px;
+    }
+    .our_salons_link{
+        position: absolute;
+        left: 155px;
+    }
+    .icons_social{
+        width: 120px;
+        margin-left: auto;
+    }
+    /* slider */
+    .slider_title{
+        font-size: 38px;
+        line-height: 140%;
+    }
+    .slider_img{
+        max-width: 80%;
+    }
+    /* news */
+    .tab_btns_container{
+        height: 600px;
+    }
+    .tab_title{
+        font-size: 16px;
+        line-height: 110%;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+    .tab_content{
+        height: 650px;
+    }
+    .paragraph{
+        font-size: 16px;
+        line-height: 110%;
+        padding-bottom: 10px;
+    }
+    /* special offers */
+    .special_offers_title{
+        font-size: 25px;
+	    line-height: 135%;
+        padding-top: 30px;
+	    margin-bottom: 30px;
+    }
+        /* services */
+        .services{
+            width: 100%;
+            height: 1550px;
+            margin-top: 1210px;
+        }
+        .services_grid_container{
+            width: 500px;
+            grid-template-columns: 1fr;
+            grid-gap: 30px 39px;
+            display: block;
+            margin-left: 0;
+            margin-right: 0;
+            margin: 0 auto;
+            text-align: center;
+    }
+      .services_card{
+          width: 100%;
+    }
+      .contacts{
+        position: absolute;
+        top: 1150px;
+        left: 0;
+    }
+    /* footer */
+    footer{
+        margin-top: 0;
+        margin-top: 10px;
+    }
+    .footer_content,.icons_social_footer{
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 15px;
+    }
+    .copywriting{
+        margin-bottom: 15px;
+    }
+    .icons_social_footer{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
