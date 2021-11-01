@@ -65,6 +65,8 @@ body{
 .container{
 	max-width: 1296px;
 	margin: 0 auto;
+	box-sizing: content-box;
+	padding: 0px 15px;
 }
 // navbar
 .navbar{
@@ -371,8 +373,9 @@ body{
   .services_grid_container{
 		width: 1100px;
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr ;
+		grid-template-columns: repeat(auto-fill,350px);
 		grid-gap: 30px 0px;
+		justify-content: center;
 		padding-top: 50px;
   }
   .services_card{

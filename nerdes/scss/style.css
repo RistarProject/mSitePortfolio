@@ -87,6 +87,10 @@ a {
   border-bottom: 2px solid #fb565a;
 }
 
+.menu_burger {
+  display: block;
+}
+
 .basket {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -124,6 +128,10 @@ a {
 
 .basket:active::before {
   background: url(../icons/icon-basket-active.png) no-repeat;
+}
+
+.basket_icon {
+  display: none;
 }
 
 .slider {

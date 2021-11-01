@@ -182,12 +182,10 @@
     }
      /* services */
      .services{
-        width: 100%;
+       
     }
     .services_grid_container{
-        width: 500px;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 30px 39px;
+       
   }
 }
 @media (max-width: 768px){
@@ -277,7 +275,7 @@
             margin-top: 1210px;
         }
         .services_grid_container{
-            width: 500px;
+            max-width: 300px;
             grid-template-columns: 1fr;
             grid-gap: 30px 39px;
             display: block;
@@ -285,7 +283,7 @@
             margin-right: 0;
             margin: 0 auto;
             text-align: center;
-    }
+        }
       .services_card{
           width: 100%;
     }
