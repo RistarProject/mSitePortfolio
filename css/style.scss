@@ -261,7 +261,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    row-gap: 40px;
     margin-top: 60px;
 }
 .link_work{
@@ -272,9 +272,6 @@ body{
     transition: ease-in 1s;
     &:hover{
         box-shadow: 0px 0px 19px -1px rgba(238, 255, 0, 1);
-    }
-    &:last-child{
-        margin-top: 40px;
     }
     .card_work{
         min-height: 435px;

@@ -336,6 +336,7 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  row-gap: 40px;
   margin-top: 60px;
 }
 
@@ -351,10 +352,6 @@ body {
 .link_work:hover {
   -webkit-box-shadow: 0px 0px 19px -1px #eeff00;
           box-shadow: 0px 0px 19px -1px #eeff00;
-}
-
-.link_work:last-child {
-  margin-top: 40px;
 }
 
 .link_work .card_work {
