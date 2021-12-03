@@ -42,8 +42,8 @@ body{
         letter-spacing: 5px;
         transition: ease-in 300ms;
         &:hover{
-            color: #fc6b6b;
-            text-shadow: #ff0606 0 0 4px, #ff0606 5px 5px 5px;
+            color: #c375f7;
+                text-shadow: #9d09ff 0 0 4px, #9d09ff 5px 5px 5px;
         }
     }
     .menu{
@@ -59,13 +59,7 @@ body{
             font-weight: 600;
             color: #ffffff;
         }
-        .link_about_me{
-            transition: ease-in 300ms;
-            &:hover{
-                color: #c375f7;
-                text-shadow: #9d09ff 0 0 4px, #9d09ff 5px 5px 5px;
-            }
-        }
+
         .link_skills{
             transition: ease-in 300ms;
             &:hover{
@@ -85,6 +79,13 @@ body{
             &:hover{
                 color: #5bfc3b;
                 text-shadow: #0b7225 0 0 4px, #0b7225 5px 5px 5px;
+            }
+        }
+        .link_contact{
+            transition: ease-in 300ms;
+            &:hover{
+                color: #ffffff;
+                text-shadow: #ffffff 0 0 4px, #ffffff 5px 5px 5px;
             }
         }
     }
@@ -109,71 +110,24 @@ body{
     position: relative;
     padding:  60px 0;
 }
-.first_screen_content{
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .first_screen_title{
-        font-weight: 700;
-        font-size: 48px;
-        line-height: 40px;
-        text-transform: uppercase;
-        text-shadow: #ff0606 0 0 4px, #ff0606 5px 8px 5px;
-        padding-bottom: 24px;
-        z-index: 33;
-    }
-    .first_screen_subtitle{
-        font-size: 24px;
-        line-height: 30px;
-        text-shadow: #ff0606 0 0 4px, #ff0606 5px 8px 5px;
-        z-index: 33;
-    }
+.first_screen_title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 40px;
+    color: #c375f7;
+    text-align: center;
+    text-shadow: #9d09ff 0 0 4px, #9d09ff 5px 5px 5px;
 }
-.red_triangle{
-    width: 0;
-    height: 0;
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-bottom: 300px solid #f95959;
-    transition: ease-in 2s;
-    margin-top: -100px;
-    &:hover{
-         transform: rotate(360deg);
-    }
-}
+     
+
 .page_title{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 50px;
     text-transform: uppercase;
     text-align: center;
 }
-// ..........about me............................
-.about_me{
-    padding: 60px 0px;
-}
-.heading_about_me{
-    color: #c375f7;
-    text-shadow: #9d09ff 0 0 4px, #9d09ff 5px 5px 5px;
-}
-.about_me_text{
-    margin: 0;
-    padding: 0;
-    margin-top: 24px;
-    p{
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 30px;
-        text-align: center;
-        max-width: 750px;
-        margin: 0 auto;
-        letter-spacing: 5px;
-        color: #c375f7;
-        text-shadow: #9d09ff 0 0 4px, #9d09ff 5px 5px 5px;
-    }
-}
+
 // .....skills.........................................
 .skills{
     padding: 60px 0px;
@@ -324,7 +278,7 @@ body{
 }
 .price_content{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 80px;
 }
@@ -396,6 +350,7 @@ body{
 .contact{
     padding: 60px 0px;
 }
+
 .heading_contact{
     text-shadow: #dbdbdb 0 0 4px, #dbdbdb 5px 5px 5px; 
 }
