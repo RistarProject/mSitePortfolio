@@ -376,6 +376,7 @@ body{
 .reviews_content{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .slider{
     max-width: 502px;

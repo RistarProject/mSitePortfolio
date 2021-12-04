@@ -1,3 +1,29 @@
+// .....................................video............................................................
+
+let videoBtnPlay = document.querySelector("#btn_video_play");
+let videoPlayIcon = document.querySelector("#play");
+let videoFile = document.querySelector("#bike_video");
+let hoverEffect = document.querySelector("#hover_video_bike");
+videoBtnPlay.addEventListener("click", function(){
+    // function effectToggle(event){
+    //     if(event.type === "mouseleave"){
+    //         hoverEffect.classList.add("hidden");
+    //     }else{
+    //         hoverEffect.classList.remove("hidden");
+    //     }
+    // }
+    if(videoFile.paused){
+        videoFile.play();
+        videoPlayIcon.src="../icons/pause.png";
+        // hoverEffect.mouseleave = effectToggle;
+        // hoverEffect.mouseenter = effectToggle;
+    }
+    else{
+          videoFile.pause();
+          videoPlayIcon.src="../icons/play.svg";
+    };
+});
+ 
 // .....................................................slider.......................................
 /* Индекс слайда по умолчанию */
 var slideIndex = 1;
@@ -33,30 +59,3 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
 }
-// .....................................video............................................................
-
-let videoBtnPlay = document.querySelector("#btn_video_play");
-let videoPlayIcon = document.querySelector("#play");
-let videoFile = document.querySelector("#bike_video");
-let hoverEffect = document.querySelector("#hover_video_bike");
-videoBtnPlay.addEventListener("click", function(){
-    // function effectToggle(event){
-    //     if(event.type === "mouseleave"){
-    //         hoverEffect.classList.add("hidden");
-    //     }else{
-    //         hoverEffect.classList.remove("hidden");
-    //     }
-    // }
-    if(videoFile.paused){
-        videoFile.play();
-        videoPlayIcon.src="../icons/pause.png";
-        // hoverEffect.mouseleave = effectToggle;
-        // hoverEffect.mouseenter = effectToggle;
-    }
-    else{
-          videoFile.pause();
-          videoPlayIcon.src="../icons/play.svg";
-    };
-});
- 
-
