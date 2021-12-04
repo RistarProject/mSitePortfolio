@@ -1,0 +1,143 @@
+@media (max-width: 1324px){
+    /* section video */
+    .section_video_content{
+        flex-direction: column;
+    }
+    .video_about_bike{
+        width: 100%;
+    }
+    .bike_video_object{
+        width: 100%;
+    }
+    /* .video_bike{
+        position: static;
+    } */
+    .video_bike .video_bike_object{
+       transform: translateX(0%);
+    }
+    .section_video_text{
+        margin-top: 30px;
+        margin-left: 0;
+    }
+    /* reviews */
+    .reviews_bike{
+        max-width: 55%;
+    }
+}
+@media (max-width: 950px){
+    /* bike service */
+    .bike_service{
+        padding-bottom: 80px;
+    }
+    .bike_service_content{
+        flex-direction: column;
+    }
+    .bike_service_text{
+        order: 2;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .repair_bike{
+        order: 1;
+        margin-left: 0;
+    }
+     /* reviews */
+     .reviews_bike{
+        max-width: 40%;
+    }
+}
+@media (max-width: 768px){
+    /* navbar */
+    .navbar_content{
+        position: relative;
+    }
+    .navbar_content .menu_list{
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 0;
+    }
+    /* first screen */
+    .first_screen,.improved_bike,.benefits,.reviews{
+        padding-bottom: 80px;
+    }
+    .first_screen_content .first_screen_title{
+        font-size: 60px;
+        padding-bottom: 46px;
+    }
+    /* improved bike */
+    .improved_bike_content{
+        flex-direction: column;
+    }
+    .improved_bike_img{
+        margin-bottom: 20px;
+    }
+    .improved_bike_text{
+        margin-left: 0;
+    }
+    .improved_bike_text h2{
+        text-align: center;
+    }
+    .improved_bike_text .improved_bike_link{
+        margin-top: 0;
+        margin-top: 20px;
+    }
+    /* benefits */
+    .benefits_content .benefits_row{
+        justify-content: center;
+    }
+    .benefits_content .benefits_row:last-child{
+        margin-top: 25px;
+    }
+     /* reviews */
+     .reviews{
+         position: relative;
+     }
+     .slider .slider_arrows{
+         margin-top: 0;
+         margin-top: 30px;
+     }
+     .reviews_bike{
+        max-width: 100%;
+        position: static;
+        margin-top: 30px;
+     }
+     /* footer */
+     .footer_content{
+         flex-direction: column;
+
+     }
+     .first_column,.second_column,.third_column{
+         margin-top: 30px;
+         margin-right: 0;
+     }
+     .first_column .mail .mail_input{
+         width: 300px;
+     }
+     .first_column .mail .btn_send{
+         margin-left: 0;
+         margin-right: 0;
+         margin: 0 auto;
+         margin-top: 20px;
+     }
+     .first_column .social_icons{
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+        margin-top: 20px;
+     }
+     .third_column{
+         flex-direction: column;
+         margin: 0;
+         padding: 0;
+
+     }
+     .third_column .useful_links{
+         margin-right: 0;
+         margin-top: 30px;
+         margin-left: -80px;
+     }
+}
