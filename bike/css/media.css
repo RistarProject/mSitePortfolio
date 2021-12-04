@@ -60,7 +60,7 @@
         left: 0;
     }
     /* first screen */
-    .first_screen,.improved_bike,.benefits,.reviews{
+    .first_screen,.improved_bike,.benefits,.section_video,.reviews{
         padding-bottom: 80px;
     }
     .first_screen_content .first_screen_title{
