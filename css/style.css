@@ -15,6 +15,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
@@ -331,6 +335,7 @@ body {
   text-align: center;
   max-width: 300px;
   margin: 0 auto;
+  letter-spacing: 3px;
   -webkit-transition: ease-in 1s;
   transition: ease-in 1s;
   padding-top: 20px;
