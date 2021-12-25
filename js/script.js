@@ -1,3 +1,17 @@
+// open phone
+const iconPhone = document.querySelector(".icon_phone");
+iconPhone.addEventListener("click", function(){
+    document.querySelector(".number_phone").classList.toggle("number_phone_active");
+});
+
+// open menu
+const menuBurger = document.querySelector(".menu_burger");
+menuBurger.addEventListener("click", function(){
+    document.querySelector(".menu_burger_icon").classList.toggle("active")
+    document.querySelector(".menu_mobile").classList.toggle("menu_mobile_active")
+});
+
+
 // html
 
 function progressBarHtml (){
@@ -54,17 +68,3 @@ function progressJs (){
 };
 
 progressJs();
-
-
-const iconPhone = document.querySelector(".icon_phone");
-iconPhone.addEventListener("click", function(){
-    document.querySelector(".number_phone").classList.toggle("number_phone_active");
-});
-
-const menuBurger = document.querySelector(".menu_burger");
-menuBurger.addEventListener("click", function(){
-    menuBurger.classList.toggle("menu_burger_active");
-});
-menuBurger.addEventListener("click", function(){
-    document.querySelector(".menu").classList.toggle("menu_mobile")
-});

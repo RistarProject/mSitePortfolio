@@ -1,18 +1,14 @@
-@media (max-width: 993px){
+@media (max-width: 1024px){
     /* navbar */
-    .link_my_site{
-        font-size: 16px;
-    }
-    .menu a{
-        font-size: 16px;
-    }
-    .navbar_content .my_phone{
+    .my_phone{
+        order: -1;
+        margin-top: 150px;
         margin-left: 0;
-        margin-left: 20px;
+        position: absolute;
     }
-    .number_phone{
-        font-size: 16px;
-    }
+}
+
+@media (max-width: 993px){
     /* portfolio */
     .portfolio_content{
         display: flex;
@@ -21,7 +17,7 @@
     }
     .link_work{
         min-height: 35px;
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .link_work .card_work{
         min-height: 35px;
@@ -40,168 +36,146 @@
        margin-top: 0;
    }
    .card_price{
-       margin-top: 30px;
+       margin-top: 40px;
    }
 }
-@media (max-width: 850px){
+
+@media (max-width: 768px){
     /* navbar */
-    .navbar_content{
-        position: relative;
-    }
-    .navbar_content .link_my_site{
-        display: inline-block;
-        margin-left: 40px;
+    .navbar_row .link_my_site{
+        display: block;
+        font-size: 18px;
+        margin-top: 40px;
     }
     .icon_phone{
-        position: absolute;
-        top: 32px;
-        left: 0;
+        display: block;
     }
     .number_phone{
         display: none;
     }
     .number_phone_active{
         display: block;
-        position: absolute;
-        top: 70px;
-        left: 0;
-       
     }
-}
-@media (max-width: 768px){
-    /* navbar */
     .menu_burger{
-        width: 30px;
-        height: 30px;
-        border: solid 2px #6e6d6d;
-        border-radius: 50%;
-        position: absolute;
-        right: 0;
-        z-index: 33;
-    }
-    .menu_burger::before,
-    .menu_burger::after{
-        content: "";
-        display: inline-block;
-        width: 50%;
-        height: 2px;
-        background-color: white;
-        position: absolute;
-        top: 0;
-        left: 7px;
-        transition: ease 1s;
-    }
-    .menu_burger::before{
-        top: 6px;
-    }
-    .menu_burger span{
         display: block;
-        width: 50%;
-        height: 2px;
-        background-color: white;
-        position: absolute;
-        top: 12px;
-        left: 7px;
-        transition: ease 1s;
-    }
-    .menu_burger::after{
-       top: 18px;
-    }
-    .menu_burger_active span{
+        border: none;
+        outline: none;
         background-color: transparent;
-        transition: ease 1s;
-    }
-    .menu_burger_active::before{
-        transform: rotate(50deg);
-        top: 12px;
-        transition: ease 1s;
-    }
-    .menu_burger_active::after{
-        transform: rotate(-50deg);
-        top: 12px;
-        transition: ease 1s;
-    }
-    .navbar_content .menu{
+        padding: 0;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+        width: 35px;
+        height: 35px;
+        border: solid 2px #eeeeee;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
         position: absolute;
-        top: -300px;
-    }
-    .navbar_content .menu_mobile{
-        display: block;
-        width: 150px;
-        min-height: 120px;
-        background-color: #292626;
-        padding-top: 10px;
-        position: absolute;
-        top: 90px;
-        right: 0;
+        top: 50px;
+        right: 15px;
         z-index: 444;
-   }
-   .navbar_content .menu li{
-       margin-top: 5px;
-       margin-right: 0;
-       margin-left: 20px;
-   }
-   /* first screen  */
-   .first_screen{
-       padding: 50px 0;
-   }
-   .first_screen_content .first_screen_title{
-       font-size: 38px;
-   }
-   .first_screen_content .first_screen_subtitle{
-       font-size: 20px;
-   }
-   .red_triangle{
-        border-left: 100px solid transparent;
-        border-right: 100px solid transparent;
-        border-bottom: 200px solid #f95959;
-   }
-   .page_title{
-       font-size: 30px;
-       line-height: 40px;
-   }
-   /* about me */
-   .about_me{
-       padding: 50px 0;
-   }
-   .about_me_text p{
-    font-size: 20px;
-    line-height: 30px;
-   }
-   /* skills */
+    }
+    .menu_burger_icon{
+        display: block;
+        position: relative;
+        width: 16px;
+        height: 2px;
+        background-color: #ffffff;
+        transition: ease 1s;
+    }
+    .menu_burger_icon::before,
+    .menu_burger_icon::after{
+        display: block;
+        position: absolute;
+        content: "";
+        width: 16px;
+        height: 2px;
+        background-color: #ffffff;
+        transition: ease 1s;
+    }
+    .menu_burger_icon::before{
+        top: -7px;
+        left: 0;
+    }
+    .menu_burger_icon::after{
+        top: 7px;
+        left: 0;
+    }
+    .menu_burger_icon.active{
+        background-color: transparent;
+    }
+    .menu_burger_icon.active::before{
+        top: 0;
+        transform: rotate(46deg);
+        transition: ease 1s;
+    }
+    .menu_burger_icon.active::after{
+        top: 0;
+        transform: rotate(-46deg);
+        transition: ease 1s;
+    }
+    .menu{
+        display: none;
+    }
+    .menu_mobile{
+        display: block;
+        width: 100%;
+        height: 163px;
+        background-color: #1b1b1b;
+        margin-top: -208px;
+        transition: ease 2s;
+        transition-delay: 1s;
+    }
+    .menu_mobile li{
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+    
+    .menu_mobile li:last-child{
+        margin-bottom: 0;
+    }
+    .menu_mobile a{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+    }
+    .menu_mobile.menu_mobile_active{
+        margin-top: 0;
+        transition: ease 2s;
+        transition-delay: 1s;
+    }
+    /* greetings */
+    .greetings_title{
+        font-size: 38px;
+    }
+    /* skills */
    .skills{
-       padding: 50px 0;
-   }
-   .skills_content{
-       margin-top: 0;
-       margin-top: 30px;
-       display: block;
-   }
-   #grey_progress{
-       width: 100%;
-   }
-   /* contact */
-   .contact_text{
-       font-size: 20px;
-   }
+        padding: 50px 0;
+    }
+    .skills_content{
+        margin-top: 0;
+        margin-top: 30px;
+        display: block;
+    }
+    .progress_bar{
+        margin-top: 40px;
+    }
+    #grey_progress{
+        width: 100%;
+    }
 }
-@media (max-width: 503px){
+
+@media (max-width: 425px){
     /* navbar */
-    .navbar_content .link_my_site{
-        font-size: 13px;
-    }
-    /* first screen */
-    .first_screen_content .first_screen_title{
-        text-align: center;
-    }
-    .first_screen_content .first_screen_subtitle{
-        text-align: center;
+    .navbar_row .link_my_site{
+        position: absolute;
     }
     /* price */
-    .list_services{
-        margin-left: 20px;
-    }
     .card_price_container .card_price_content .list_services li{
-        font-size: 16px;
+        margin-left: 80px;
     }
 }

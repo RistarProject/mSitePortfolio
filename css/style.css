@@ -35,17 +35,8 @@ body {
   padding: 0 15px;
 }
 
-.none {
-  display: none;
-}
-
-.navbar {
-  width: 100%;
-  min-height: 80px;
-}
-
-.navbar_content {
-  min-height: 80px;
+.navbar_row {
+  min-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +45,7 @@ body {
           align-items: center;
 }
 
-.navbar_content .link_my_site {
+.navbar_row .link_my_site {
   font-weight: 600;
   color: #ffffff;
   letter-spacing: 5px;
@@ -62,72 +53,73 @@ body {
   transition: ease-in 300ms;
 }
 
-.navbar_content .link_my_site:hover {
+.navbar_row .link_my_site:hover {
   color: #c375f7;
   text-shadow: #9d09ff 0 0 4px, #9d09ff 5px 5px 5px;
 }
 
-.navbar_content .menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.menu_burger {
+  display: none;
+}
+
+.menu_mobile {
+  display: none;
+}
+
+.menu {
   margin-left: auto;
 }
 
-.navbar_content .menu li {
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu li {
   margin-right: 20px;
 }
 
-.navbar_content .menu li:last-child {
+.menu li:last-child {
   margin-right: 0;
 }
 
-.navbar_content .menu a {
+.menu a {
   font-weight: 600;
   color: #ffffff;
 }
 
-.navbar_content .menu .link_skills {
+.link_skills {
   -webkit-transition: ease-in 300ms;
   transition: ease-in 300ms;
 }
 
-.navbar_content .menu .link_skills:hover {
+.link_skills:hover {
   color: #509cff;
   text-shadow: #0d4b9c 0 0 4px, #006eff 5px 5px 5px;
 }
 
-.navbar_content .menu .link_portfolio {
+.link_price {
   -webkit-transition: ease-in 300ms;
   transition: ease-in 300ms;
 }
 
-.navbar_content .menu .link_portfolio:hover {
-  color: #f8fc3b;
-  text-shadow: #d8db06 0 0 4px, #d8db06 5px 5px 5px;
-}
-
-.navbar_content .menu .link_price {
-  -webkit-transition: ease-in 300ms;
-  transition: ease-in 300ms;
-}
-
-.navbar_content .menu .link_price:hover {
+.link_price:hover {
   color: #5bfc3b;
   text-shadow: #0b7225 0 0 4px, #0b7225 5px 5px 5px;
 }
 
-.navbar_content .menu .link_contact {
+.link_contact {
   -webkit-transition: ease-in 300ms;
   transition: ease-in 300ms;
 }
 
-.navbar_content .menu .link_contact:hover {
+.link_contact:hover {
   color: #ffffff;
   text-shadow: #ffffff 0 0 4px, #ffffff 5px 5px 5px;
 }
 
-.navbar_content .my_phone {
+.my_phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,30 +129,12 @@ body {
   margin-left: 40px;
 }
 
-.navbar_content .icon_phone {
+.icon_phone {
   width: 16px;
   height: 16px;
   background: url(../icons/phone.png) no-repeat;
   background-size: contain;
   margin-right: 20px;
-}
-
-.navbar_content .number_phone {
-  font-weight: 600;
-}
-
-.first_screen {
-  position: relative;
-  padding: 60px 0;
-}
-
-.first_screen_title {
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 40px;
-  color: #c375f7;
-  text-align: center;
-  text-shadow: #9d09ff 0 0 4px, #9d09ff 5px 5px 5px;
 }
 
 .page_title {
@@ -169,6 +143,19 @@ body {
   line-height: 50px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.greetings {
+  padding: 60px 0px;
+}
+
+.greetings_title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 40px;
+  color: #c375f7;
+  text-align: center;
+  text-shadow: #9d09ff 0 0 4px, #9d09ff 5px 5px 5px;
 }
 
 .skills {

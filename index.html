@@ -13,36 +13,44 @@
 </head>
 <body>
 
-    <nav class="navbar">
+    <header>
         <div class="container">
-            <div class="navbar_content">
-                <a href="#" class="link_my_site">Сайт Андрея Дудкина</a>
-                <div class="menu_burger">
-                    <span></span>
-                </div>
-                <ul class="menu ">
-                    <li> <a href="#skills" class="link_skills">Навыки</a></li>
-                    <li><a href="#portfolio" class="link_portfolio">Портфолио</a></li>
-                    <li> <a href="#price" class="link_price">Цены</a></li>
-                    <li> <a href="#contact" class="link_contact">Контакты</a></li>
+            <nav class="menu_mobile">
+                <ul>
+                    <li><a href="skills" class="link_skills">Навыки</a></li>
+                    <li><a href="#portfolio" class="link_portfolio">Портфолио</a></li> 
+                    <li><a href="#price" class="link_price">Цены </a></li>
+                    <li><a href="#contact" class="link_contact">Контакты</a></li>
                 </ul>
-                <div class="my_phone">
-                    <div class="icon_phone"></div>
-                    <span class="number_phone">+ 7 920 260 73 39</span>
+            </nav>
+            <div class="navbar">
+                <div class="navbar_row">
+                    <a href="#" class="link_my_site">Сайт Андрея Дудкина</a>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="skills" class="link_skills">Навыки</a></li>
+                            <li><a href="#portfolio" class="link_portfolio">Портфолио</a></li> 
+                            <li><a href="#price" class="link_price">Цены </a></li>
+                            <li><a href="#contact" class="link_contact">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button class="menu_burger">
+                        <span class="menu_burger_icon"></span>
+                    </button>
+                    <div class="my_phone">
+                        <div class="icon_phone"></div>
+                        <span class="number_phone">+ 7 920 260 73 39</span>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </nav>
-
-    <header class="first_screen">
-        <div class="container">
-            <div class="first_screen_content">
-                <h1 class="first_screen_title">Привет меня зовут Андрей, я верстаю лендинги!</h1>
             </div>
         </div>
     </header>
-
     <main>
+        <section class="greetings">
+            <div class="container">
+                <h1 class="greetings_title">Привет меня зовут Андрей, я верстаю лендинги!</h1>
+            </div>
+        </section>
         <section class="skills" id="skills">
             <div class="container">
                 <h2 class="page_title heading_skills"> В своей работе я использую</h2>
@@ -68,7 +76,6 @@
                 </div>
             </div>
         </section>
-
         <section class="portfolio" id="portfolio">
             <div class="container">
                 <h2 class="page_title heading_portfolio">Несколько из моих работ</h2>
@@ -121,7 +128,6 @@
                 </div>
             </div>
         </section>
-
         <section class="price" id="price">
             <div class="container">
                 <h2 class="page_title heading_price">Цены</h2>
@@ -143,9 +149,7 @@
                 </div>
             </div>
         </section>
-        
     </main>
-
     <footer class="contact" id="contact">
         <div class="container">
             <h2 class="page_title heading_contact">Контакты</h2>
