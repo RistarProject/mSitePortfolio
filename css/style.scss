@@ -72,7 +72,13 @@ body{
         text-shadow: #0d4b9c 0 0 4px, #006eff 5px 5px 5px;
     }
 }
-
+.link_skills{
+    transition: ease-in 300ms;
+    &:hover{
+        color: #f8fc3b;
+        text-shadow: #d8db06 0 0 4px, #d8db06 5px 5px 5px;
+    }
+}
 .link_price{
     transition: ease-in 300ms;
     &:hover{
