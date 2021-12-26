@@ -20,7 +20,7 @@ videoBtnPlay.addEventListener("click", function(){
     }
     else{
           videoFile.pause();
-          videoPlayIcon.src="../icons/play.svg";
+          videoPlayIcon.src="./icons/play.svg";
           hoverEffect.onmouseleave = null;
           hoverEffect.onmouseenter = null;
     };
