@@ -213,6 +213,13 @@
         font-size: 25px;
         line-height: 30px;
     }
+     /* food menu */
+     .food_list{
+        grid-template-columns: repeat(auto-fill, 290px);
+    }
+    .food_link{
+        max-width: 290px;
+    }
      /* take food */
      .download_annexes_buttons .google_play{
          display: block;

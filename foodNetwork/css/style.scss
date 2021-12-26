@@ -397,7 +397,7 @@ body{
 }
 .slider_content{
     max-width: 804px;
-    min-height: 476px;
+    min-height: 320px;
     text-align: center;
     display: block;
     margin-left: 0;
@@ -421,19 +421,12 @@ body{
         margin-bottom: 6px;
     }
 }
-.left_arrow_slider{
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-.right_arrow_slider{
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    cursor: pointer;
+.container_for_arrows_slider{
+    display: flex;
+    justify-content: space-between;
+    .left_arrow_slider,.right_arrow_slider{
+        cursor: pointer;
+    }
 }
 // ....contact........................................
 .contact{
