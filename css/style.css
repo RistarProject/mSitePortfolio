@@ -27,6 +27,42 @@ body {
   background-color: #000000;
 }
 
+header, main, footer {
+  background: url(../images/snow2.png);
+  -webkit-animation: snow 10000ms linear infinite;
+          animation: snow 10000ms linear infinite;
+}
+
+@-webkit-keyframes snow {
+  from {
+    background-position: 0 -300px;
+  }
+  20% {
+    background-position: 20% -100px;
+  }
+  40% {
+    background-position: 30% 100px;
+  }
+  to {
+    background-position: 20% 700px;
+  }
+}
+
+@keyframes snow {
+  from {
+    background-position: 0 -300px;
+  }
+  20% {
+    background-position: 20% -100px;
+  }
+  40% {
+    background-position: 30% 100px;
+  }
+  to {
+    background-position: 20% 700px;
+  }
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -97,6 +133,16 @@ body {
 .link_skills:hover {
   color: #509cff;
   text-shadow: #0d4b9c 0 0 4px, #006eff 5px 5px 5px;
+}
+
+.link_skills {
+  -webkit-transition: ease-in 300ms;
+  transition: ease-in 300ms;
+}
+
+.link_skills:hover {
+  color: #f8fc3b;
+  text-shadow: #d8db06 0 0 4px, #d8db06 5px 5px 5px;
 }
 
 .link_price {
