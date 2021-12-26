@@ -14,7 +14,7 @@ videoBtnPlay.addEventListener("click", function(){
     }
     if(videoFile.paused){
         videoFile.play();
-        videoPlayIcon.src="../icons/pause.png";
+        videoPlayIcon.src="./icons/pause.png";
         hoverEffect.onmouseleave = effectToggle;
         hoverEffect.onmouseenter = effectToggle;
     }
